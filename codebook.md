@@ -10,6 +10,6 @@ The original data features over 500 measurements and derivations taken from the 
 
 The data in this set is an average of the data from the raw set with respect to a test subject and the activity performed--i.e. all measurements taken while subject 4 wasl laying down are averaged together into a single mean average value.
 
-Names of the measurements were kept identical to the original data for ease of understanding.
+Names of the measurements were kept almost identical to the originals, but special characters ("(",")","-") were removed, and the variables were camel-cased for readability.
 
 Please feel free to look at the Codebook Supplement for a very brief idea of what the variables represent.

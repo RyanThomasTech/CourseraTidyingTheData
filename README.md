@@ -18,7 +18,7 @@ You must be certain that the working directoy containts a "data" folder, inside 
 I chose to extract all data that involved a mean or standard deviation in any way, not just the ones that said mean() and std(), this means that the MeanFreq() lot is included in my set. I did this because I felt like the experiments intended for those to be considered "means," so it did not make sense to exclude them due to a minor typography choice. The exception to this philosophy was that I made sure not to include the angle() set despite them including Means, because they took means as arguments rather than presenting the means themselves.
 
 ### On Variable Names:
-I used the variable names that the researchers themselves used. They seemed appropriately descriptive to me, after reading through the researchers' ReadMe file. I put some thought into making my own, but after trying a few out I realized that I wasn't adding any clarity, only adding verbosity by doing so.
+I used the variable names that the researchers themselves used, with some tweaking for readability. They seemed appropriately descriptive to me, after reading through the researchers' ReadMe file. I put some thought into making my own, but after trying a few out I realized that I wasn't adding any clarity, only adding verbosity by doing so.
 
 ### Closing Thoughts:
 The data.table package is EXTREMELY powerful. I spent 2 hours trying to brute force my way through a solution that took about 5 minutes of effort after doing some research into data.table

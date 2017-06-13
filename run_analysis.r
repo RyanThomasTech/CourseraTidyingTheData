@@ -22,6 +22,11 @@ run_analysis <- function(){
   keeps<-grep("(mean()|std())",features$measurement)
   x_agg <- x_agg[,keeps]
   features_names <- as.vector(features[keeps,2])
+  features_names <- sapply(features_names, function(x){gsub("(\\(|\\)|\\-)","",x)})
+  features_names <- sapply(features_names, function(x){gsub("mean","Mean",x)})
+  names(features_names) <- NULL
+  features_names <- sapply(features_names, function(x){gsub("std","Std",x)})
+  names(features_names) <- NULL
   
   #complete step 1
   df <-cbind(y_agg, subject_agg, x_agg)
