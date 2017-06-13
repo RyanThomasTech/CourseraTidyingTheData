@@ -41,7 +41,7 @@ run_analysis <- function(){
   dt<-data.table(df)
   finaldf<-dt[order(`Subject ID`, Activity), lapply(.SD, mean), by=.(Activity,`Subject ID`)]
   
-  write.table(finaldf,"tidydataoutput.csv", sep=",")
+  write.table(finaldf,"tidydataoutput.txt", row.names=FALSE)
 }
 
 
